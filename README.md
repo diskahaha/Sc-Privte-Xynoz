@@ -1,4 +1,4 @@
-# Sc-Privte-Xynoz
+# Bot
 
 # Heroku Buildpack
 ### Instal Buildpack
