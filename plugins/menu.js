@@ -182,7 +182,7 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
     const valor = './thumbnail.jpg'
     let url = 'https://telegra.ph/file/9186962c3ffa47d6616c0.jpg'
     conn.sendButton(m.chat,
-`𝚂𝚒𝚖𝚙𝚕𝚎 𝙱𝚘𝚝 𝚆𝚑𝚊𝚝𝚜𝙰𝚙𝚙 | 𝙱𝚢 𝚇𝚢𝚗𝚘𝚣
+`𝚂𝚒𝚖𝚙𝚕𝚎 𝙱𝚘𝚝 𝚆𝚑𝚊𝚝𝚜𝙰𝚙𝚙 | 𝙱𝚢 𝕭𝖔𝖙 ∅༢࿔ྀ
 
 ${wish()} ${name}
 `, text.trim(), `https://telegra.ph/file/b9c83f723c52fceaf0a34.jpg`, [
