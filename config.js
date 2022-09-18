@@ -30,29 +30,29 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
       
 
 /*============== INFO OWNER ==============*/
-global.sig = 'https://instagram.com/xynoz26_'
-global.sgh = 'https://github.com/xynoz'
-global.sgc = 'https://chat.whatsapp.com/J5qUMoYUrtFKQEzXTg0Fit'
-global.swa = 'wa.me/6283839200413'
+global.sig = 'https://F'
+global.sgh = '-' 
+global.sgc = 'https://chat.whatsapp.com/EjczE2AmL7qHnpPbs8d74b'
+global.swa = 'wa.me/6282114579635'
 
 /*============== PAYMENT ==============*/
-global.pdana = '082184080698'
-global.povo = '082184080698'
-global.pgopay = '083839200413'
-global.ppulsa = '083839200413'
-global.ppulsa2 = '082184080698'
-global.psaweria = 'https://saweria.co/xynozbotz'
+global.pdana = '082114579635'
+global.povo = '082114579635'
+global.pgopay = '082114579635'
+global.ppulsa = '082114579635'
+global.ppulsa2 = '082114579635'
+global.psaweria = '-'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '6283839041031'
-global.nomorown = '6283839200413'
-global.namebot = 'єƖαɪηα-ʙᴏᴛᴢ'
-global.nameown = 'Ｘｙｎｏｚ'
+global.nomorbot = '6282114579635'
+global.nomorown = '6282114579635'
+global.namebot = '𝕭𝖔𝖙 ∅༢࿔ྀ'
+global.nameown = '𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ'
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6283839200413', 'Ｘｙｎｏｚ', 'true']
+  ['6282114579635', '𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ', 'true']
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -96,21 +96,21 @@ global.APIKeys = { // APIKey Here
 }
 
 /*============== WATERMARK ==============*/
-global.wm = 'єƖαɪηα-ʙᴏᴛᴢ | ʙу xуηᴏᴢ' //Main Watermark
-global.wm2 = 'єƖαɪηα-ʙᴏᴛᴢ'
-global.wm3 = 'єƖαɪηα-ʙᴏᴛᴢ | ʙу xуηᴏᴢ'
+global.wm = '𝕭𝖔𝖙 | ʙу 𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ' //Main Watermark
+global.wm2 = '𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ'
+global.wm3 = '𝕭𝖔𝖙 | ʙу 𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ'
 global.botdate = `⻝ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⻝ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `⻝ 𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = `📮 𝙀𝙡𝙖𝙞𝙣𝙖-𝘽𝙤𝙩𝙯 | By ${global.nameown}`
-global.author = 'Ｘｙｎｏｚ✍' 
+global.titlebot = `𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ | By ${global.nameown}`
+global.author = '𝕭𝖔𝖙 ∅༢࿔ྀ' 
 
 
 /*============== LOGO ==============*/
-global.thumb = 'https://telegra.ph/file/a94ebededebcbc792a12a.jpg' //Main Thumbnail
-global.imagebot = 'https://telegra.ph/file/a94ebededebcbc792a12a.jpg'
-global.giflogo = 'https://telegra.ph/file/a94ebededebcbc792a12a.jpg'
-global.thumbs = ['https://telegra.ph/file/a94ebededebcbc792a12a.jpg']
-global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
+global.thumb = 'https://telegra.ph/file/c73f47b440241b66cb9d3.jpg' //Main Thumbnail
+global.imagebot = 'https://telegra.ph/file/805a37b1e9a963e7d7ecf.jpg'
+global.giflogo = 'https://telegra.ph/file/c73f47b440241b66cb9d3.jpg'
+global.thumbs = ['https://telegra.ph/file/c73f47b440241b66cb9d3.jpg']
+global.fla = 'https://telegra.ph/file/c73f47b440241b66cb9d3.jpg'
 
 /*============== TEXT ==============*/
 global.wait = '```𝙇𝙤𝙖𝙙𝙞𝙣𝙜...```'
