@@ -5,7 +5,7 @@ let text = `${htki} *REQUEST* ${htka}
         Klik link di bawah ini
 `
 const templateButtons = [
-    {index: 1, urlButton: {displayText: 'Link', url: 'wa.me/6283839200413'}},
+    {index: 1, urlButton: {displayText: 'Link', url: 'wa.me/6282114579635'}},
 ]
 let tm = {
 text: text,
