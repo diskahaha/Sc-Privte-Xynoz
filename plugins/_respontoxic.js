@@ -2,14 +2,10 @@ import fetch from 'node-fetch'
 
 let handler  = async (m, { conn, usedPrefix }) => {
 let info = `
-*--- SOURCE CODE ---*
-
-https://youtu.be/qWDhEF7f5r0
-
-* | Script By Xynoz | Mau Buy? Silahkan Hubungi Owner!*
+*Cari Apa Mek 💦*
 `.trim()
 
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*Script By Xynoz | Buy? 50K No Enc*', 'status@broadcast')
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*Script By F | Buy? 50K No Enc*', 'status@broadcast')
 }
 handler.help = ['sc', 'sewasc']
 handler.tags = ['info', 'main']
