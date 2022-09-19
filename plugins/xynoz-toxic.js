@@ -16,7 +16,6 @@ handler.fail = null
 handler.limit = false
 handler.mods = false 
 handler.premium = false
-handler.group = false
 handler.private = false
 
 export default handler 
