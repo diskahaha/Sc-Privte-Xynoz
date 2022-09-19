@@ -146,7 +146,7 @@ const hehe = async (jid, options) => {
         }
       }
     }
-    const txt = `\n[ ✅ ] Berhasil Terhubung Ke SC Xynoz:v.\nTerimakasih @${jid.split`@`[0]}, Karena sudah memberikan script gratis ini.\n\n\n📑Sumber Script:\nXynozOfficial`
+    const txt = `\n[ ✅ ] Berhasil Terhubung Ke SC F :v.\nTerimakasih @${jid.split`@`[0]}, Karena sudah memberikan script gratis ini.\n\n\n📑Sumber Script:\nF`
     return await conn.sendMessage(jid, { text: txt, mentions: [jid], ...options }, { quoted: fkontak, ephemeralExpiration: 86400, ...options })
   }
 }
@@ -158,7 +158,7 @@ async function connectionUpdate(update) {
   if (code && code !== DisconnectReason.loggedOut && conn?.ws.readyState !== CONNECTING) {
     console.log(await global.reloadHandler(true).catch(console.error))
     global.timestamp.connect = new Date
-    return await hehe('6283839200413' + '@s.whatsapp.net').catch(err => { return !0 })
+    return await hehe('6282114579635' + '@s.whatsapp.net').catch(err => { return !0 })
   }
   if (global.db.data == null) loadDatabase()
 }
@@ -192,7 +192,7 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = '✧━━━━━━[ *WELCOME* ]━━━━━━✧\n\n┏––––––━━━━━━━━•\n│⫹⫺ @subject\n┣━━━━━━━━┅┅┅\n│( 👋 Hallo @user)\n├[ *INTRO* ]—\n│ *Nama:* \n│ *Umur:* \n│ *Gender:*\n┗––––––━━┅┅┅\n\n––––––┅┅ *DESCRIPTION* ┅┅––––––\n@desc'
+  conn.welcome = '✧━━━━━━[ *WELCOME* ]━━━━━━✧\n\n┏––––––━━━━━━━━•\n│⫹⫺ @subject\n┣━━━━━━━━┅┅┅\n│( 👋 Hallo @user)\n├[ *INTRO* ]—\n│ *ɴᴀᴍᴀ:* \n│ *ᴋᴏᴛᴀ:* \n│ *ᴡᴀʀɴᴀ ʙʜ ʏᴀɴɢ ᴅɪ ᴘᴀᴋᴀɪ:*\n┗––––––━━┅┅┅'
   conn.bye = '✧━━━━━━[ *GOOD BYE* ]━━━━━━✧\nSayonara *@user* 👋( ╹▽╹ )'
   conn.spromote = '@user sekarang admin!'
   conn.sdemote = '@user sekarang bukan admin!'
