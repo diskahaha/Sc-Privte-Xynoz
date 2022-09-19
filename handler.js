@@ -56,11 +56,11 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.laper)) 
                     user.laper = 100
                 if (!isNumber(user.limit))
-                    user.limit = 50
+                    user.limit = 10
                 if (!isNumber(user.lastclaim))
                     user.lastclaim = 0
                 if (!isNumber(user.joinlimit)) 
-                    user.joinlimit = 10
+                    user.joinlimit = 1
                 if (!isNumber(user.pc)) 
                     user.pc = 0
                 if (!isNumber(user.ojekk)) 
@@ -346,15 +346,15 @@ if (!isNumber(user.ayam)) user.ayam = 0
                 if (!isNumber(user.premium))
                     user.premium = false
                 if (!isNumber(user.premiumTime))
-                    user.premiumTime = 9
+                    user.premiumTime = 0
                 if (!user.lbars) 
                     user.lbars = '[▒▒▒▒▒▒▒▒▒]'
                 if (!isNumber(user.joinlimit))
-                    user.joinlimit = 1
+                    user.joinlimit = 0
             } else
                 global.db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 50,
+                    limit: 10,
                     lastclaim: 0,
                     registered: false,
                     spammer: 0,
@@ -366,7 +366,7 @@ if (!isNumber(user.ayam)) user.ayam = 0
                     laper: 100,
                     stamina : 100,
                     pc : 0,
-                    joinlimit: 10,
+                    joinlimit: 1,
                     coin: 0,
                     age: -1,
                     regTime: -1,
@@ -545,7 +545,7 @@ esteh: 0,
                     role: 'Newbie ㋡', 
                     
                     premium: false,
-                    premiumTime: 9,
+                    premiumTime: 0,
                 }
             let chat = global.db.data.chats[m.chat]
             if (typeof chat !== 'object')
@@ -640,7 +640,7 @@ esteh: 0,
         const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isOwner = isROwner || m.fromMe
         const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-        const isPrems = isROwner || db.data.users[m.sender].premiumTime > 9
+        const isPrems = isROwner || db.data.users[m.sender].premiumTime > 0
 
         if (opts['queque'] && m.text && !(isMods || isPrems)) {
             let queque = this.msgqueque, time = 1000 * 5
