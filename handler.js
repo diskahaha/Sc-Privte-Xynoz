@@ -56,11 +56,11 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.laper)) 
                     user.laper = 100
                 if (!isNumber(user.limit))
-                    user.limit = 10
+                    user.limit = 50
                 if (!isNumber(user.lastclaim))
                     user.lastclaim = 0
                 if (!isNumber(user.joinlimit)) 
-                    user.joinlimit = 1
+                    user.joinlimit = 99
                 if (!isNumber(user.pc)) 
                     user.pc = 0
                 if (!isNumber(user.ojekk)) 
@@ -354,7 +354,7 @@ if (!isNumber(user.ayam)) user.ayam = 0
             } else
                 global.db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 10,
+                    limit: 50,
                     lastclaim: 0,
                     registered: false,
                     spammer: 0,
@@ -366,7 +366,7 @@ if (!isNumber(user.ayam)) user.ayam = 0
                     laper: 100,
                     stamina : 100,
                     pc : 0,
-                    joinlimit: 1,
+                    joinlimit: 99,
                     coin: 0,
                     age: -1,
                     regTime: -1,
@@ -951,10 +951,18 @@ export async function participantsUpdate({ id, participants, action }) {
                 for (let user of participants) {
                     let pp = '.'
                     try {
-                        pp = await this.profilePictureUrl(user, 'image')
+                        pp = await this.profilePictureUrl(user, '.')
                     } catch (e) {
                     } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Intro 💦, @user!').replace('@subject', groupMetadata.desc?.toString() || 'unknow') :
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || '
+┌–––––––––––––––––✥
+│「▰▰▰▱▱▱▱▱▱▱」
+└┬❖ 「 Intro 」
+┌┤❀  ɴᴀᴍᴀ :
+┊│❀  ᴋᴏᴛᴀ : 
+┊│❀  ᴡᴀʀɴᴀ ʙʜ ʏᴀɴɢ ᴅɪ ᴘᴀᴋᴀɪ :
+│└────────────┈
+, @user!').replace('@subject', groupMetadata.desc?.toString() || 'unknow') :
                             (chat.sBye || this.bye || conn.bye || 'Selamat tinggal, @user!')).replace('@user', `${this.getName(user)}`)
                         this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
                         }
