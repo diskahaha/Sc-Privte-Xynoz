@@ -24,4 +24,4 @@ handler.command = /^(add|tambah|\+)p(rem)?$/i
 handler.group = true
 handler.rowner = true
 
-export default handlerp
+export default handler
