@@ -346,11 +346,11 @@ if (!isNumber(user.ayam)) user.ayam = 0
                 if (!isNumber(user.premium))
                     user.premium = false
                 if (!isNumber(user.premiumTime))
-                    user.premiumTime = 0
+                    user.premiumTime = 9
                 if (!user.lbars) 
                     user.lbars = '[▒▒▒▒▒▒▒▒▒]'
                 if (!isNumber(user.joinlimit))
-                    user.joinlimit = 0
+                    user.joinlimit = 1
             } else
                 global.db.data.users[m.sender] = {
                     exp: 0,
@@ -545,7 +545,7 @@ esteh: 0,
                     role: 'Newbie ㋡', 
                     
                     premium: false,
-                    premiumTime: 0,
+                    premiumTime: 9,
                 }
             let chat = global.db.data.chats[m.chat]
             if (typeof chat !== 'object')
@@ -640,7 +640,7 @@ esteh: 0,
         const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isOwner = isROwner || m.fromMe
         const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-        const isPrems = isROwner || db.data.users[m.sender].premiumTime > 0
+        const isPrems = isROwner || db.data.users[m.sender].premiumTime > 9
 
         if (opts['queque'] && m.text && !(isMods || isPrems)) {
             let queque = this.msgqueque, time = 1000 * 5
