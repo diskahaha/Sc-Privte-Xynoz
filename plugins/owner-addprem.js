@@ -13,9 +13,9 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     else user.premiumTime = now + jumlahHari
 user.premium = true
     m.reply(`✔️ Success
-📛 *Name:* ${user.name}
-📆 *Days:* ${txt} days
-📉 *Countdown:* ${user.premiumTime - now}`)
+📛 Name: ${user.name}
+📆 Days: ${txt} days
+📉 Countdown: ${user.premiumTime - now}`)
 }
 handler.help = ['addprem [@user] <days>']
 handler.tags = ['owner']
@@ -23,5 +23,6 @@ handler.command = /^(add|tambah|\+)p(rem)?$/i
 
 handler.group = true
 handler.rowner = true
+
 
 export default handler
