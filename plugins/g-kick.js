@@ -9,7 +9,7 @@ if(m.quoted.sender === ownerGroup || m.quoted.sender === conn.user.jid) return;
 let usr = m.quoted.sender;
 await conn.groupParticipantsUpdate(m.chat, [usr], "remove"); return;
 }
-  if (!m.mentionedJid[0]) throw `tag yang mau dikick`;
+  if (!m.mentionedJid[0]) throw `Silahkan tag user yang ingin di kick`;
   let users = m.mentionedJid.filter(
     (u) => !(u == ownerGroup || u.includes(conn.user.jid))
   );
@@ -18,11 +18,12 @@ await conn.groupParticipantsUpdate(m.chat, [usr], "remove"); return;
       await conn.groupParticipantsUpdate(m.chat, [user], "remove");
 };
 
-handler.help = ['kick @user']
+handler.help = ['kick <tag>']
 handler.tags = ['group']
-handler.command = /^(kic?k|remove|tendang|\-)$/i
+handler.command = /^(kic?k|remove|keluarkan|tendang|\-)$/i
 
 handler.group = true
 handler.botAdmin = true
+handler.admin = true
 
-module.exports = handler
+export default handler
