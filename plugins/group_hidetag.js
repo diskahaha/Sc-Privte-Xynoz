@@ -20,6 +20,5 @@ handler.tags = ['group']
 handler.command = /^(hidetag)$/i
 
 handler.group = true
-handler.admin = true
 
 export default handler
