@@ -344,7 +344,7 @@ if (!isNumber(user.ayam)) user.ayam = 0
                     user.fishingroddurability = 0
 
                 if (!isNumber(user.premium))
-                    user.premium = false
+                    user.premium = true
                 if (!isNumber(user.premiumTime))
                     user.premiumTime = 0
                 if (!user.lbars) 
@@ -544,7 +544,7 @@ esteh: 0,
                     lbars: '[▒▒▒▒▒▒▒▒▒]', 
                     role: 'Newbie ㋡', 
                     
-                    premium: false,
+                    premium: true,
                     premiumTime: 0,
                 }
             let chat = global.db.data.chats[m.chat]
