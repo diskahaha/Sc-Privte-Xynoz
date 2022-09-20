@@ -344,9 +344,9 @@ if (!isNumber(user.ayam)) user.ayam = 0
                     user.fishingroddurability = 0
 
                 if (!isNumber(user.premium))
-                    user.premium = true
+                    user.premium = false
                 if (!isNumber(user.premiumTime))
-                    user.premiumTime = 0
+                    user.premiumTime = -1
                 if (!user.lbars) 
                     user.lbars = '[▒▒▒▒▒▒▒▒▒]'
                 if (!isNumber(user.joinlimit))
@@ -544,8 +544,8 @@ esteh: 0,
                     lbars: '[▒▒▒▒▒▒▒▒▒]', 
                     role: 'Newbie ㋡', 
                     
-                    premium: true,
-                    premiumTime: 0,
+                    premium: false,
+                    premiumTime: -1,
                 }
             let chat = global.db.data.chats[m.chat]
             if (typeof chat !== 'object')
@@ -640,7 +640,7 @@ esteh: 0,
         const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isOwner = isROwner || m.fromMe
         const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-        const isPrems = isROwner || db.data.users[m.sender].premiumTime > 0
+        const isPrems = isROwner || db.data.users[m.sender].premiumTime > -1
 
         if (opts['queque'] && m.text && !(isMods || isPrems)) {
             let queque = this.msgqueque, time = 1000 * 5
@@ -954,7 +954,7 @@ export async function participantsUpdate({ id, participants, action }) {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Selamat Datang, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Intro , @user!').replace('@subject', groupMetadata.desc?.toString() || 'unknow') :
                             (chat.sBye || this.bye || conn.bye || 'Selamat tinggal, @user!')).replace('@user', `${this.getName(user)}`)
                         this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
                         }
