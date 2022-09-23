@@ -151,8 +151,8 @@ global.lolm = 'Ⓛ'
 global.htjava = '❃' //hiasan Doang :v
 
 /*============== STICKER WM ==============*/
-global.stickpack = '⛩ＸｙｎｏｚＢｏｔｚ'
-global.stickauth = `ʙʏ xʏɴᴏᴢ`
+global.stickpack = '「▰▰▱▱▱▱」'
+global.stickauth = `ʙʏ 𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ`
 
 global.multiplier = 38 // The higher, The harder levelup
 
