@@ -81,11 +81,11 @@ const listMessage = {
 │▸ *sɴ:* ${sn}
 ╰═┅═━––––––๑
 
-http://xnxx.comᯤ
-ꜱᴜʙꜱᴄʀɪʙᴇ ʏᴛ: Xynoz
+http://xnxx.com
+「▰▰▰▱▱▱▱▱▱▱」
 `
   let buttonMessage= {
-'document':{'url':'https://instagram.com/fiikrah26_?igshid=YmMyMTA2M2Y='},
+'document':{'url':'https://chat.whatsapp.com/EjczE2AmL7qHnpPbs8d74b'},
 'mimetype':global.ddocx,
 'fileName':'▢━━━━「 Registration 」━━━━▢',
 'fileLength':fsizedoc,
@@ -100,7 +100,7 @@ http://xnxx.comᯤ
 'title':global.titlebot,
 'body':global.titlebot,
 'thumbnail':await(await fetch('https://telegra.ph/file/90071a6504a0b67068d9b.jpg')).buffer(),
-'sourceUrl':'https://instagram.com/fiikrah26_?igshid=YmMyMTA2M2Y='}},
+'sourceUrl':'https://chat.whatsapp.com/EjczE2AmL7qHnpPbs8d74b'}},
 'caption':cap,
 'footer':botdate,
 'buttons':[
