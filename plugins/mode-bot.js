@@ -21,7 +21,6 @@ handler.help = ['botmode']
 handler.tags = ['group']
 handler.command = /^(botmode)$/i
 
-handler.admin = true
 handler.group = true
 
 export default handler
