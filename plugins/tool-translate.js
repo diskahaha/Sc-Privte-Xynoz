@@ -41,4 +41,3 @@ handler.tags = ['tools']
 handler.command = /^(tr(anslate)?)$/i
 
 export default handler
-A
