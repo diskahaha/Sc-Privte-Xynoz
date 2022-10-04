@@ -1,4 +1,4 @@
-const translate = require('translate-google-api')
+import translate from 'translate-google-api'
 const defaultLang = 'en'
 const tld = 'cn'
 
@@ -39,7 +39,5 @@ Daftar bahasa yang didukung: https://cloud.google.com/translate/docs/languages
 handler.help = ['translate'].map(v => v + ' <lang> <teks>')
 handler.tags = ['tools']
 handler.command = /^(tr(anslate)?)$/i
-handler.limit = false
-handler.fail = null
-handler.exp = 0
-module.exports = handler
+
+export default handler
