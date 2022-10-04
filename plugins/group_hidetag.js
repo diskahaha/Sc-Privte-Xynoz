@@ -21,6 +21,9 @@ handler.tags = ['group']
 handler.command = /^(pengumuman|announce|hiddentag|hidetag)$/i
 
 handler.group = true
+handler.admin = true
+handler.owner = true
+handler.rowner = true
 
 export default handler
 
