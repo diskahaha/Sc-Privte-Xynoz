@@ -33,26 +33,26 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 global.sig = 'https://F'
 global.sgh = '-' 
 global.sgc = 'https://chat.whatsapp.com/EjczE2AmL7qHnpPbs8d74b'
-global.swa = 'wa.me/6282114579635'
+global.swa = 'wa.me/6285715174511'
 
 /*============== PAYMENT ==============*/
-global.pdana = '082114579635'
-global.povo = '082114579635'
-global.pgopay = '082114579635'
-global.ppulsa = '082114579635'
-global.ppulsa2 = '082114579635'
+global.pdana = '085715174511'
+global.povo = '085715174511'
+global.pgopay = '085715174511'
+global.ppulsa = '085715174511'
+global.ppulsa2 = '085715174511'
 global.psaweria = '-'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '6282114579635'
-global.nomorown = '6282114579635'
+global.nomorbot = '6285715174511'
+global.nomorown = '79914071827'
 global.namebot = '𝕭𝖔𝖙 ∅༢࿔ྀ'
 global.nameown = '𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ'
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6282114579635', '𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ', 'true']
+  ['79914071827', '𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ', 'true']
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -102,7 +102,7 @@ global.wm3 = '𝕭𝖔𝖙 | ʙу 𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ'
 global.botdate = `⻝ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⻝ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `⻝ 𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
 global.titlebot = `𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ | By ${global.nameown}`
-global.author = '𝕭𝖔𝖙 ∅༢࿔ྀ' 
+global.author = 'ʙу 𝕭𝖔𝖙 • [A]ndii ∅༢࿔ྀ' 
 
 
 /*============== LOGO ==============*/
